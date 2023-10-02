@@ -38,7 +38,7 @@ a {
   color: var(--primary-color);
 }
 
-section {
+article {
   display: flex;
   flex-direction: column;
   align-items: center;
