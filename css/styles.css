@@ -134,7 +134,7 @@ article {
 
 #button-4 a {
   position: relative;
-  transition: all .45s ease-Out;
+  transition: all 0.45s ease-Out;
 }
 
 #underline {
@@ -143,9 +143,9 @@ article {
   margin-top: 15px;
   align-self: flex-end;
   left: -200px;
-  background: #BFC0C0;
+  background: #bfc0c0;
   position: absolute;
-  transition: all .3s ease-Out;
+  transition: all 0.3s ease-Out;
   bottom: 0;
 }
 
@@ -187,11 +187,11 @@ input[type="submit"],
   display: inline-flex;
   height: 40px;
   width: 150px;
-  margin: 20px 20px 20px 20px;
-  color: #000000;
+  margin: 20px;
+  color: #000;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: .8em;
+  font-size: 0.8em;
   letter-spacing: 1.5px;
   align-items: center;
   justify-content: center;
