@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Add own Favicon-->
+  <link rel="icon" href="img/myfavicon.png" type="image/x-icon">
+
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,42 +16,65 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="icon" href="img/myfavicon.ico" type="image/x-icon">
-  <title>Tina Ngo</title>
+  <title>Portfolio</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- Header; logo and main navigation -->
-  <header class="page-header" id="top">
-   <img src="img/Base_Color.jpg" alt="logo" class="page-header__item">
-    <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">My Work</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About Me</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <div class="header-container">
+    <header class="page-header" id="top">
+      <h2 class="header-text">&lt;/TN&gt;</h2>
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">My Work</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About
+              Me</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem"
+              class="navigation-list__item navigation-list__item--active">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
   <br>
   <br>
+
   <!-- Main content -->
-  <section>
+
+  <section id="home">
     <div class="profile">
-      <img src="img/me.jpg" class="profile__portrait" alt="Tina Ngo Portrait">
-      <h1>Welcome!</h1>
-      <p>My name is Tina Ngo. I am a <span>web</span> development student from the United States.</p>
+      <img src="img/me.jpg" 
+      data-aos="fade-up" 
+      data-aos-delay="30" 
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"  
+      class="profile__portrait" 
+      alt="Tina Ngo Portrait">
+      <h3
+      data-aos="fade-up" 
+      data-aos-delay="800" 
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out">
+      Welcome! My name is...</h3>
+      <div
+      data-aos="fade-up" 
+      data-aos-delay="900" 
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out">
+      <h2>Tina Ngo</h2>
+      <h2>Full Stack Developer</h2>
+      <p>Based in Bellevue, Washington</p>
       <br>
-      <br>
-      <a href="work.html" class="nwbtn nwbtn-1">Check out my Work</a> 
+      <a href="files/cv.pdf" class="nwbtn nwbtn-1">Download my CV</a>
       <br>
     </div>
 
