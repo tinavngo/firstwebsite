@@ -1,7 +1,6 @@
 
 :root {
   /* Main website */
-
   /* Colors */
   --background-color: #fff;
   --grid-color: #7a646427;
@@ -37,7 +36,9 @@
 
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 article {
   display: flex;
@@ -330,9 +331,9 @@ input[type="submit"]:focus,
     text-align: center;
     padding: 5%;
     background-color: var(--header-color);
-    width:90%;
+    width:80%;
     display: inline-block;
-    margin-left: 5%;
+    margin-left: 10%;
     
   }
   
@@ -412,10 +413,10 @@ input[type="submit"]:focus,
     text-align: center;
     padding: 5%;
     background-color: var(--header-color);
-    width:90%;
+    width:80%;
     display: inline-block;
-    margin-left: 5%;
-    margin-top: 1px;
+    margin-left: 10%;
+    margin-top: -2%;
     padding-bottom: 1px;
   }
 
@@ -499,7 +500,6 @@ input[type="submit"]:focus,
 
   /* Work Section */
 
-
 /* start grid fallback */
 
 .project-list__item {
@@ -512,6 +512,9 @@ input[type="submit"]:focus,
   border-radius: 5%;
   box-shadow: 1px 1px 1px 1px rgba(211, 211, 211, 0.4);
   transition: 0.5s ease-in-out;
+  outline: 5px solid;
+  outline-color: var(--accent-color);
+  outline-offset: 0;
 }
 
 .project-list__item:hover {
@@ -522,9 +525,9 @@ input[type="submit"]:focus,
 .paperplane {
   position: relative;
   overflow: hidden;
-  width: 290px;
-  height: 290px;
-  background-color: #b6e3fc;
+  width: 330px;
+  height: 330px;
+  background-color: var(--accent-color);
   border-radius:50%;
   margin-left: 5%;
   margin-right: 5%;
@@ -666,12 +669,12 @@ input[type="submit"]:focus,
 .contact {
   text-align: center;
   padding: 1%;
-  background-color: var(--top-color);
+  background-color: gray;
   width:50%;
   display: inline-block;
   margin-left: 25%;
   margin-bottom: 7%;
-  margin-top: 10%;
+  margin-top: 5%;
   transition: 0.8s ease-in-out;
   border-radius: 10px;
 }
@@ -762,9 +765,11 @@ opacity: 0.6;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    max-width: 75%;
+    max-width: 80%;
     margin: 20px;
-    margin-left: 13%;
+    margin-left: 10%;
+    padding: 5%;
+    margin-top: -4%;
     }
 
   .project-list__item:last-child {
