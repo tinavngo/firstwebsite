@@ -43,7 +43,7 @@ html {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--background-color);
 }
 
 article {
