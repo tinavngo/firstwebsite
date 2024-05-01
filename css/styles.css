@@ -91,7 +91,7 @@ a {
   padding: 10px;
   border-radius: 10px 10px 0 0;
 }
-/* header */
+
 
 header {
   background-color: var(--top-color);
@@ -148,13 +148,13 @@ article {
   padding: 10px;
   max-height: 80%;
   max-width: 80%;
-  background-color: var(--accent-color);
+  background-color: rgb(206, 209, 235);
   
 }
 
 .gtbtn:hover {
   background-color: var(--accent-color);
-  transition: 0.5s ease-in-out;
+  transition: 0.35s ease-in-out;
 }
 
 .nwbtn {
@@ -224,7 +224,7 @@ a:hover {
 
 a:visited {
   /* visited link */
-  color: var(--background-color);
+  color: black;
 }
 
 a:active {
@@ -262,15 +262,31 @@ input[type="submit"]:focus,
   opacity: 0.8;
   color: white;
 }
+/* header container */
+/* nav link */
+
+.header-container a{
+  color: white;
+}
+.header-container a:visited{
+  color: white;
+}
+
 
 .button__secondary {
   background-color: var(--main-button-text-color);
   color: var(--secondary-button-color);
 }
 
-.navigation-list__item--active {
-  text-decoration: none;
+.navigation-list{
+  color: white;
 }
+
+.navigation-list__item:hover{
+  border-bottom: white 3px solid;
+  transition: 0.4s ease-in;
+}
+
 
 /* About Page */
 .about-page {

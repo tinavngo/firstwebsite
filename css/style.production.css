@@ -114,7 +114,7 @@ a:hover {
 
 a:visited {
   /* visited link */
-  color: var(--visited-link-color);
+  color: black;
 }
 
 a:active {
