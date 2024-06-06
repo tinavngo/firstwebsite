@@ -570,9 +570,14 @@ input[type="submit"]:focus,
   }
 }
 
-  /* Work Section */
+  /* Work/Project Section */
 
 /* start grid fallback */
+
+.projectimg {
+  max-height: 300px;
+  max-width: 350px;
+}
 
 .project-list__item {
   background-color: var(--secondary-color);
