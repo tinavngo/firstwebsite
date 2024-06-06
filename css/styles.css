@@ -5,9 +5,9 @@
   --background-color: #fff;
   --grid-color: #7a646427;
   --secondary-color: #fff;
-  --header-text-color: #16203f;
+  --header-text-color: #ffffff;
   --text-color: #000;
-  --header-color: #e8f8ff;
+  --header-color: #3b3b3b;
   --text-shadow: #0e0f11;
   --top-color: #3b3b3b;
   --accent-color: #01012b9d;
@@ -31,7 +31,7 @@
 
   /* Link Colors */
   --visited-link-color: black;
-  --active-link-color: #489c79;
+  --active-link-color: white;
   --nav-color: #60a0ff;
 
 }
@@ -50,7 +50,7 @@ article {
 h1 {
   font-size: var(--header-font-size);
   font-weight: var(--header-font-weight);
-  color: var(--header-text-color);
+  color: var(--text-color);
   font-family: var(--header-font-family);
 }
 
@@ -116,9 +116,68 @@ article {
   margin: 50px;
 }
 
+/* index */
+#index {
+  margin-bottom: 10%;
+}
+
+.FSD {
+  color: #60a0ff;
+}
+
+/* Scroll feature*/
+
+.scroll-msg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+ padding-top: 2em;
+ height: -60px;
+ font-size: 1em;
+ animation: arrow-float 1s infinite;
+}
+
+.scroll-msg > div:nth-child(1) {
+  margin-top: -10vh;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.arrow-animated {
+  height: -60px;
+  font-size: 1em;
+  animation: arrow-float 1s infinite;
+}
+
+@keyframes arrow-float {
+  0% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+  }
+  60% {
+      transform: translateY(.75%);
+      animation-timing-function: ease-in-out;
+  }
+  100% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+  }
+}
+
 /* new button experiment */
 .nwbtn-1 {
-  border: 0 solid;
+  border-radius: 10px 10px;
+  background-color: var(--accent-color);
+  color: white;
+  border: 2.5px solid gray;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
   outline: 1px solid;
   outline-color: var(--header-text-color);
@@ -131,6 +190,7 @@ article {
 
 .nwbtn-1:hover {
   border: 1px solid;
+  color: white;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
   outline-offset: 15px;
   outline-color: rgba(255, 255, 255, 0);
@@ -142,7 +202,7 @@ article {
 
 .gtbtn {
   display: inline-block;
-  color: #16203f;
+  color: white;
   border: 1px solid;
   outline: 1px solid;
   padding: 10px;
@@ -158,20 +218,20 @@ article {
 }
 
 .nwbtn {
-  color: var(--header-text-color);
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-size: 15px;
   font-weight: 100px;
   line-height: 45px;
-  max-width: 200px;
-  margin: 0 auto 2em;
+  max-width: 170px;
   position: relative;
   vertical-align: middle;
   width: 100%;
   align-items: center;
   text-align: center;
   text-decoration: none;
+  margin-right: 10px;
 }
 
 /* button styling */
@@ -224,7 +284,7 @@ a:hover {
 
 a:visited {
   /* visited link */
-  color: black;
+  color: white;
 }
 
 a:active {
@@ -288,13 +348,6 @@ input[type="submit"]:focus,
 }
 
 
-/* About Page */
-.about-page {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
 /* Profile Index */
 
 .profile {
@@ -348,16 +401,15 @@ input[type="submit"]:focus,
     text-align: center;
     padding: 5%;
     background-color: var(--header-color);
-    width:80%;
+    width:100%;
     display: inline-block;
-    margin-left: 10%;
     
   }
   
   .about__section {
     background-color: var(--secondary-color);
     padding: 5px;
-    width: 90%;
+    width: 80%;
     display: inline-block; 
    }
 
@@ -368,6 +420,8 @@ input[type="submit"]:focus,
   .about h2{
     position: relative;
     margin-top: 0;
+    color: #FFFF;
+    text-shadow: 3px 3px 3px #000;
   }
   
   /* Home section*/
@@ -406,12 +460,12 @@ input[type="submit"]:focus,
 
 .stack:before {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #e8f8ff);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--header-color));
 }
 
 .stack:after {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #e8f8ff);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--header-color));
 }
 
 .stack__logos {
@@ -430,15 +484,16 @@ input[type="submit"]:focus,
     text-align: center;
     padding: 5%;
     background-color: var(--header-color);
-    width:80%;
+    width:100%;
     display: inline-block;
-    margin-left: 10%;
     margin-top: -2%;
     padding-bottom: 1px;
   }
 
   .skills h2{
     position: relative;
+    color: #FFFF;
+    text-shadow: 3px 3px 3px #000;
   }
   
 
@@ -523,7 +578,7 @@ input[type="submit"]:focus,
   background-color: var(--secondary-color);
   display: inline-block;
   width: auto;
-  min-height: auto;
+  min-height: 400px;
   margin: 20px;
   padding: 20px;
   border-radius: 5%;
