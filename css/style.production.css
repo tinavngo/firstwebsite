@@ -307,14 +307,24 @@ input[type="submit"]:focus,
 /* start grid fallback */
 
 .project-list__item {
-  background-color: var(--grid-color);
+  background-color: var(--secondary-color);
   display: inline-block;
   width: auto;
-  min-height: auto;
-  margin: 30px;
-  padding: 25px;
-  border-radius: 20%;
+  height: 560px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5%;
+  box-shadow: 1px 1px 5px rgba(211, 211, 211, 0.4); /* Changed initial shadow to have more blur */
+  transition: box-shadow 0.5s ease, outline-color 0.5s ease;
+  outline: 5px solid;
+  outline-color: var(--accent-color);
+  outline-offset: 0;
 }
+
+.project-list__item:hover {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
 
 /* end grid fallback */
 

@@ -200,16 +200,39 @@ article {
   scale: 1.05;
 }
 
-.gtbtn {
-  display: inline-block;
+.gtbtn1 {
+  position: absolute;
   color: white;
-  border: 1px solid;
+  display: inline-block;
+  border: black 1px solid;
   outline: 1px solid;
   padding: 10px;
   max-height: 80%;
-  max-width: 80%;
-  background-color: rgb(206, 209, 235);
-  
+  width: 150px;
+  background-color: rgb(107, 113, 170);
+  bottom: 0;
+  margin: 20px;
+  right: 0;
+  border-radius: 10px;
+}
+
+.gtbtn1:hover {
+  background-color: var(--accent-color);
+  transition: 0.35s ease-in-out;
+}
+
+.gtbtn {
+  position: absolute;
+  color: white;
+  border: black 1px solid;
+  outline: 1px solid;
+  padding: 10px;
+  max-height: 80%;
+  background-color: rgb(107, 113, 170);
+  bottom: 0;
+  margin: 20px;
+  left: 0;
+  border-radius: 10px;
 }
 
 .gtbtn:hover {
@@ -573,11 +596,15 @@ input[type="submit"]:focus,
 }
 
   /* Work/Project Section */
-
+.project-list p {
+  font-size: medium;
+  font-weight: 600;
+}
 /* start grid fallback */
 
 .projectimg {
-  max-height: 300px;
+  max-height: 230px;
+  min-height: 230px;
   max-width: 350px;
 }
 
@@ -585,19 +612,19 @@ input[type="submit"]:focus,
   background-color: var(--secondary-color);
   display: inline-block;
   width: auto;
-  min-height: 400px;
+  height: 560px;
   margin: 20px;
   padding: 20px;
   border-radius: 5%;
-  box-shadow: 1px 1px 1px 1px rgba(211, 211, 211, 0.4);
-  transition: 0.5s ease-in-out;
+  box-shadow: 1px 1px 5px rgba(211, 211, 211, 0.4); /* Changed initial shadow to have more blur */
+  transition: box-shadow 0.5s ease, outline-color 0.5s ease;
   outline: 5px solid;
   outline-color: var(--accent-color);
   outline-offset: 0;
 }
 
 .project-list__item:hover {
-  box-shadow: 5px 5px 5px 5px var(--header-color);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
 /* Paperplane animation*/
